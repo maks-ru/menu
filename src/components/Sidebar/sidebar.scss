@@ -1,0 +1,97 @@
+.sidebar {
+  position: relative;
+  height: 100vh;
+  width: 25%;
+  transition: 0.4s;
+
+  span {
+    opacity: 1;
+    transition: all 0.3s;
+  }
+}
+.wrapper__header {
+  position: relative;
+  display: flex;
+  margin-bottom: 30px;
+
+  button {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.menu:hover {
+  background-color: rgb(53, 53, 138, 0.5);
+  width: 170px;
+}
+
+.container {
+  position: relative;
+  button {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.hide {
+  position: relative;
+  width: 10%;
+  span {
+    opacity: 0;
+    transition: all 0.3s;
+    width: 0;
+  }
+  .menu {
+    width: 20px;
+  }
+  .bottom__content {
+    width: 20px;
+  }
+
+  [title]:hover::after {
+    position: absolute;
+    content: attr(title);
+    background-color: rgba(12, 12, 199, 0.5);
+    padding: 7px;
+    border-radius: 12px;
+    cursor: pointer;
+    right: -43px;
+    width: 80px;
+  }
+}
+
+.logo {
+  width: 26px;
+  height: 26px;
+}
+
+.wrapper__menu {
+  margin-top: 15px;
+  .menu {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 7px;
+    border-radius: 12px;
+    cursor: pointer;
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+}
+
+.wrapper__bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  .bottom__content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+}
